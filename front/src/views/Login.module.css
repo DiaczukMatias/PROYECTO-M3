@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.formContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.inputField {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #098814;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #33b864;
+  outline: none;
+}
+
+.submitButton {
+  width: 50%;
+  padding: 12px;
+  background-color: #098814;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.submitButton:hover {
+  background-color: #06c917;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submitButton:disabled {
+  background-color: #afb4b0;
+  cursor: not-allowed;
+}
+
+.h1 {
+  color: #098814;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}

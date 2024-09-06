@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.formContainer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f4f9f4;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.h1 {
+  color: #098814;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.inputField {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #05b122;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #02d117;
+  box-shadow: 0 0 8px rgba(2, 209, 23, 0.3);
+  outline: none;
+}
+
+.submitButton {
+  width: 50%;
+  padding: 12px;
+  background-color: #09ad12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #06c917;
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  background-color: #c8ccca;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}

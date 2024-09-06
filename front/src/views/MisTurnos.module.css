@@ -1,0 +1,94 @@
+/* Fondo de pantalla */
+body {
+  background-color: #f0f4f8; /* Color de fondo más suave y moderno */
+  font-family: "Roboto", sans-serif; /* Fuente consistente con Login y Register */
+}
+
+/* Contenedor principal */
+.container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f4f8; /* Coincide con el fondo de pantalla */
+}
+
+/* Contenedor de las cards */
+.cardsContainer {
+  flex-wrap: wrap;
+  gap: 16px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Título */
+.h1 {
+  text-align: center;
+  font-size: 2.5rem; /* Tamaño de fuente más grande */
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+/* Card de los turnos */
+.card {
+  background-color: #ffffff; /* Fondo blanco para un look moderno */
+  border: none; /* Eliminar el borde */
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  padding: 20px;
+  width: 100%;
+  max-width: 350px; /* Cards ligeramente más grandes */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover en las cards */
+.card:hover {
+  transform: translateY(-5px); /* Efecto de levantamiento */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más profunda al hacer hover */
+}
+
+/* Mensaje cuando no hay turnos */
+.noAppointmentsMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ff6f61; /* Color de texto acorde al tema */
+  margin-top: 20px;
+}
+
+/* Estilo para el formulario de agendar turnos */
+.form {
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form input,
+.form select,
+.form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+/* Estilo del botón en el formulario */
+.form button {
+  background-color: #ff6f61; /* Color primario del botón */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #e65a50; /* Color más oscuro al hacer hover */
+}

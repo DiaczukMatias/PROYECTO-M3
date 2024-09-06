@@ -1,0 +1,70 @@
+/* Estilos de la card */
+.card {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 20px;
+  margin: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Sombra pronunciada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  width: 100%;
+  max-width: 350px; /* Ancho máximo */
+  text-align: left; /* Alineación del texto */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al hacer hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más profunda al hacer hover */
+}
+
+/* Estilo del título */
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+/* Estilo del texto */
+.text {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Estilo del estado */
+.status {
+  margin-top: 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Estilos del estado según su tipo */
+.status.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.canceled {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Botón de cancelar */
+.cancelButton {
+  margin-top: 20px;
+  background-color: #ff6f61;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #e65a50; /* Efecto de hover */
+}

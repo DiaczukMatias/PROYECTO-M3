@@ -1,0 +1,101 @@
+/* Home.module.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.home {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1; /* Un gris claro para el fondo general */
+  min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la pantalla */
+  padding-top: 80px; /* Espacio para la navbar fija */
+}
+
+.header {
+  background-color: #ffffff; /* Fondo blanco para destacar el encabezado */
+  padding: 3rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: #2e7d32; /* Verde oscuro para resaltar el título */
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: #555555; /* Gris oscuro para el subtítulo */
+  font-size: 1.2rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.infoSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas más pequeñas */
+  padding: 2rem 1rem;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0; /* Gris claro para los bordes */
+  border-radius: 12px; /* Bordes más redondeados para un aspecto moderno */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra suave para profundidad */
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Elevación al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hover */
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardContent h2 {
+  color: #2e7d32; /* Verde oscuro para los títulos de las tarjetas */
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardContent p {
+  color: #666666; /* Gris medio para el texto de las tarjetas */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .infoSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+}
