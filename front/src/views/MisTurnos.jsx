@@ -79,7 +79,7 @@ const MisTurnos = () => {
     }
 
     axios
-      .get(`http://localhost:3000/users/${user.id}`)
+      .get(`https://mellifluous-granita-2fc2dc.netlify.app`)
       .then((res) => dispatch(setAppointments(res.data.appointments)))
       .catch((err) => console.error("Error fetching appointments:", err));
   }, [user, dispatch, navigate]);
@@ -111,3 +111,5 @@ const MisTurnos = () => {
 };
 
 export default MisTurnos;
+
+// http://localhost:3000/users/${user.id}

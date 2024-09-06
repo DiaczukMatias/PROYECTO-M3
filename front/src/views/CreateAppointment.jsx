@@ -58,7 +58,7 @@ const CreateAppointment = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/appointments/schedule", {
+      await axios.post("https://mellifluous-granita-2fc2dc.netlify.app", {
         ...formData,
         userId: user.id,
       });
@@ -100,3 +100,5 @@ const CreateAppointment = () => {
 };
 
 export default CreateAppointment;
+
+// http://localhost:3000/appointments/schedule

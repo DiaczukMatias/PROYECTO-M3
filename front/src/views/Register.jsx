@@ -41,7 +41,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/users/register",
+        "https://mellifluous-granita-2fc2dc.netlify.app",
         dataToSend,
         {
           headers: { "Content-Type": "application/json" },
@@ -134,3 +134,5 @@ const Register = () => {
 };
 
 export default Register;
+
+// http://localhost:3000/users/register
